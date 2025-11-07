@@ -38,45 +38,100 @@
 			</div>
 		</article>
 
-		<!-- About Me -->
-		<article id="about" class="wrapper style2">
-			<div class="container">
-				<header>
-					<h2>About Me</h2>
-					<p>How I became interested in AI Engineering</p>
-				</header>
-				
-				<div class="row aln-center">
-					<div class="col-4 col-6-medium col-12-small">
-						<span class="image fit">
-							<img src="images/about1.jpg" alt="Young Siheng exploring computers" />
-						</span>
-					</div>
+		<!-- About Me (readability-enhanced) -->
+<article id="about" class="wrapper style2">
+	<!-- Local styles to improve font readability just for this section -->
+	<style>
+		/* Readability-focused typography for the About section */
+		#about { padding-top: 2rem; padding-bottom: 2rem; }
+		#about .container { max-width: 1100px; margin: 0 auto; }
+		#about h2 {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-size: 2rem;
+			font-weight: 700;
+			letter-spacing: -0.02em;
+			color: #0b1220;
+			margin-bottom: 0.4rem;
+		}
+		#about p.lead {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-size: 1.05rem;
+			font-weight: 600;
+			color: #1f2b38;
+			margin-bottom: 1rem;
+		}
+		#about .readable {
+			font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			font-size: 18px;              /* slightly larger for readability */
+			line-height: 1.75;           /* more breathing room between lines */
+			color: #111214;              /* strong contrast */
+			max-width: 44em;             /* optimal measure for long text */
+			hyphens: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+		/* Responsive adjustments */
+		@media (max-width: 720px) {
+			#about h2 { font-size: 1.5rem; }
+			#about .readable { font-size: 16px; line-height: 1.6; }
+		}
+		/* Image styling to keep layout tidy */
+		#about .image.fit img {
+			width: 100%;
+			height: auto;
+			border-radius: 6px;
+			box-shadow: 0 6px 18px rgba(15,20,25,0.08);
+		}
+	</style>
 
-					<div class="col-8 col-6-medium col-12-small">
-						<p>
-							My dad is an IT technician, and I found it very interesting to tinker with computers with him growing up. 
-							Once, he even bought me a commemorative edition modular router, which was like a practical Lego set. 
-							From then on, I developed a strong interest in information technology, both hardware and software. 
-							The development and popularization of artificial intelligence in recent years has made me aware of future trends, 
-							and driven by my passion and the tide of the times, I chose AI Engineering as my major.
-						</p>
-					</div>
-				</div>
+	<div class="container">
+		<header>
+			<h2>About Me</h2>
+			<p class="lead">How I became interested in AI Engineering</p>
+		</header>
 
-				<div class="row aln-center">
-					<div class="col-4 col-6-medium col-12-small">
-						<span class="image fit"><img src="images/about2.jpg" alt="Working on a project" /></span>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<span class="image fit"><img src="images/about3.jpg" alt="AI concept illustration" /></span>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<span class="image fit"><img src="images/about4.jpg" alt="Team collaboration or university life" /></span>
-					</div>
+		<div class="row aln-center">
+			<!-- left: image (optional) -->
+			<div class="col-4 col-6-medium col-12-small">
+				<span class="image fit">
+					<img src="images/about1.jpg" alt="Young Siheng exploring computers" />
+				</span>
+			</div>
+
+			<!-- right: readable text -->
+			<div class="col-8 col-6-medium col-12-small">
+				<div class="readable">
+					<p>
+						My dad is an IT technician, and I found it very interesting to tinker with computers with him growing up.
+						Once, he even bought me a commemorative edition modular router, which was like a practical Lego set.
+						From then on, I developed a strong interest in information technology, both hardware and software.
+						The development and popularization of artificial intelligence in recent years has made me aware of future trends,
+						and driven by my passion and the tide of the times, I chose AI Engineering as my major.
+					</p>
 				</div>
 			</div>
-		</article>
+		</div>
+
+		<!-- extra illustrative images (placeholders you can replace later) -->
+		<div class="row aln-center" style="margin-top:1.25rem;">
+			<div class="col-4 col-6-medium col-12-small">
+				<span class="image fit">
+					<img src="images/about2.jpg" alt="Working on a project" />
+				</span>
+			</div>
+			<div class="col-4 col-6-medium col-12-small">
+				<span class="image fit">
+					<img src="images/about3.jpg" alt="AI concept illustration" />
+				</span>
+			</div>
+			<div class="col-4 col-6-medium col-12-small">
+				<span class="image fit">
+					<img src="images/about4.jpg" alt="Team collaboration or university life" />
+				</span>
+			</div>
+		</div>
+	</div>
+</article>
 
 		<!-- My Skills -->
 		<article id="work" class="wrapper style3">
@@ -207,3 +262,4 @@
 
 	</body>
 </html>
+
